@@ -8,8 +8,14 @@ set(CMAKE_CXX_STANDARD 		17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS 	OFF)
 
+option(COMPILE_EXECUTABLE "whether to compile the executable" OFF)
+
 set(LIBRARY_NAME Library)
 set(EXECUTABLE_NAME Executable)
 
 add_subdirectory(src)
-add_subdirectory(app)
+if (COMPILE_EXECUTABLE)
+  add_subdirectory(app)
+else()
+  message("w/o exe. compiling")
+endif()

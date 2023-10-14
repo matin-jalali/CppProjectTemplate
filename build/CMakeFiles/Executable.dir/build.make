@@ -116,6 +116,7 @@ Executable_EXTERNAL_OBJECTS =
 Executable: CMakeFiles/Executable.dir/main.cc.o
 Executable: CMakeFiles/Executable.dir/my_lib.cc.o
 Executable: CMakeFiles/Executable.dir/build.make
+Executable: libLibrary.a
 Executable: CMakeFiles/Executable.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Executable"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Executable.dir/link.txt --verbose=$(VERBOSE)

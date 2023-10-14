@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Library
+
+# Build rule for target.
+Library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Library
+.PHONY : Library
+
+# fast build rule for target.
+Library/fast:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/build
+.PHONY : Library/fast
+
+#=============================================================================
 # Target rules for targets named Executable
 
 # Build rule for target.
@@ -156,6 +169,7 @@ my_lib.o: my_lib.cc.o
 
 # target to build an object file
 my_lib.cc.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/my_lib.cc.o
 	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/my_lib.cc.o
 .PHONY : my_lib.cc.o
 
@@ -165,6 +179,7 @@ my_lib.i: my_lib.cc.i
 
 # target to preprocess a source file
 my_lib.cc.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/my_lib.cc.i
 	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/my_lib.cc.i
 .PHONY : my_lib.cc.i
 
@@ -174,6 +189,7 @@ my_lib.s: my_lib.cc.s
 
 # target to generate assembly for a file
 my_lib.cc.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/my_lib.cc.s
 	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/my_lib.cc.s
 .PHONY : my_lib.cc.s
 
@@ -184,8 +200,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Executable"
 	@echo "... edit_cache"
+	@echo "... Library"
+	@echo "... Executable"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

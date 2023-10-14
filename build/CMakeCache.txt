@@ -187,6 +187,9 @@ CppProjectTemplate_BINARY_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTe
 //Value Computed by CMake
 CppProjectTemplate_SOURCE_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate
 
+//Dependencies for target
+Library_LIB_DEPENDS:STATIC=
+
 
 ########################
 # INTERNAL cache entries

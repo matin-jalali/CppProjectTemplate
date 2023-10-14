@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mtn/Documents/repository/CppProjectTemplate/my_lib.cc" "/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles/Library.dir/my_lib.cc.o"
+  "/home/mtn/Documents/repository/CppProjectTemplate/src/my_lib.cc" "/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles/Library.dir/src/my_lib.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

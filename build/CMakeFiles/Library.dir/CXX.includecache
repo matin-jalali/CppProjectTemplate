@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/mtn/Documents/repository/CppProjectTemplate/my_lib.cc
+/home/mtn/Documents/repository/CppProjectTemplate/src/my_lib.cc
 my_lib.h
-/home/mtn/Documents/repository/CppProjectTemplate/my_lib.h
+/home/mtn/Documents/repository/CppProjectTemplate/src/my_lib.h
 
-/home/mtn/Documents/repository/CppProjectTemplate/my_lib.h
+/home/mtn/Documents/repository/CppProjectTemplate/src/my_lib.h
 iostream
 -
 

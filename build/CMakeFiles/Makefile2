@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/mtn/Documents/repository/CppProjectTemplate/build
 CMakeFiles/Library.dir/all:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/depend
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles --progress-num=4,5 "Built target Library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles --progress-num=3,4 "Built target Library"
 .PHONY : CMakeFiles/Library.dir/all
 
 # Include target in all.
@@ -103,7 +103,7 @@ clean: CMakeFiles/Library.dir/clean
 CMakeFiles/Executable.dir/all: CMakeFiles/Library.dir/all
 	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/depend
 	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles --progress-num=1,2,3 "Built target Executable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles --progress-num=1,2 "Built target Executable"
 .PHONY : CMakeFiles/Executable.dir/all
 
 # Include target in all.
@@ -113,7 +113,7 @@ all: CMakeFiles/Executable.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Executable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Executable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles 0
 .PHONY : CMakeFiles/Executable.dir/rule

@@ -57,38 +57,38 @@ include CMakeFiles/Library.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Library.dir/flags.make
 
-CMakeFiles/Library.dir/my_lib.cc.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/my_lib.cc.o: ../my_lib.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Library.dir/my_lib.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/my_lib.cc.o -c /home/mtn/Documents/repository/CppProjectTemplate/my_lib.cc
+CMakeFiles/Library.dir/src/my_lib.cc.o: CMakeFiles/Library.dir/flags.make
+CMakeFiles/Library.dir/src/my_lib.cc.o: ../src/my_lib.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Library.dir/src/my_lib.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/my_lib.cc.o -c /home/mtn/Documents/repository/CppProjectTemplate/src/my_lib.cc
 
-CMakeFiles/Library.dir/my_lib.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/my_lib.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtn/Documents/repository/CppProjectTemplate/my_lib.cc > CMakeFiles/Library.dir/my_lib.cc.i
+CMakeFiles/Library.dir/src/my_lib.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/my_lib.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtn/Documents/repository/CppProjectTemplate/src/my_lib.cc > CMakeFiles/Library.dir/src/my_lib.cc.i
 
-CMakeFiles/Library.dir/my_lib.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/my_lib.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtn/Documents/repository/CppProjectTemplate/my_lib.cc -o CMakeFiles/Library.dir/my_lib.cc.s
+CMakeFiles/Library.dir/src/my_lib.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/my_lib.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtn/Documents/repository/CppProjectTemplate/src/my_lib.cc -o CMakeFiles/Library.dir/src/my_lib.cc.s
 
-CMakeFiles/Library.dir/my_lib.cc.o.requires:
+CMakeFiles/Library.dir/src/my_lib.cc.o.requires:
 
-.PHONY : CMakeFiles/Library.dir/my_lib.cc.o.requires
+.PHONY : CMakeFiles/Library.dir/src/my_lib.cc.o.requires
 
-CMakeFiles/Library.dir/my_lib.cc.o.provides: CMakeFiles/Library.dir/my_lib.cc.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/my_lib.cc.o.provides.build
-.PHONY : CMakeFiles/Library.dir/my_lib.cc.o.provides
+CMakeFiles/Library.dir/src/my_lib.cc.o.provides: CMakeFiles/Library.dir/src/my_lib.cc.o.requires
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/my_lib.cc.o.provides.build
+.PHONY : CMakeFiles/Library.dir/src/my_lib.cc.o.provides
 
-CMakeFiles/Library.dir/my_lib.cc.o.provides.build: CMakeFiles/Library.dir/my_lib.cc.o
+CMakeFiles/Library.dir/src/my_lib.cc.o.provides.build: CMakeFiles/Library.dir/src/my_lib.cc.o
 
 
 # Object files for target Library
 Library_OBJECTS = \
-"CMakeFiles/Library.dir/my_lib.cc.o"
+"CMakeFiles/Library.dir/src/my_lib.cc.o"
 
 # External object files for target Library
 Library_EXTERNAL_OBJECTS =
 
-libLibrary.a: CMakeFiles/Library.dir/my_lib.cc.o
+libLibrary.a: CMakeFiles/Library.dir/src/my_lib.cc.o
 libLibrary.a: CMakeFiles/Library.dir/build.make
 libLibrary.a: CMakeFiles/Library.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libLibrary.a"
@@ -100,7 +100,7 @@ CMakeFiles/Library.dir/build: libLibrary.a
 
 .PHONY : CMakeFiles/Library.dir/build
 
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/my_lib.cc.o.requires
+CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/my_lib.cc.o.requires
 
 .PHONY : CMakeFiles/Library.dir/requires
 

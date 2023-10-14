@@ -136,62 +136,59 @@ Executable/fast:
 	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/build
 .PHONY : Executable/fast
 
-main.o: main.cc.o
+app/main.o: app/main.cc.o
 
-.PHONY : main.o
-
-# target to build an object file
-main.cc.o:
-	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/main.cc.o
-.PHONY : main.cc.o
-
-main.i: main.cc.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cc.i:
-	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/main.cc.i
-.PHONY : main.cc.i
-
-main.s: main.cc.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cc.s:
-	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/main.cc.s
-.PHONY : main.cc.s
-
-my_lib.o: my_lib.cc.o
-
-.PHONY : my_lib.o
+.PHONY : app/main.o
 
 # target to build an object file
-my_lib.cc.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/my_lib.cc.o
-	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/my_lib.cc.o
-.PHONY : my_lib.cc.o
+app/main.cc.o:
+	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/app/main.cc.o
+.PHONY : app/main.cc.o
 
-my_lib.i: my_lib.cc.i
+app/main.i: app/main.cc.i
 
-.PHONY : my_lib.i
+.PHONY : app/main.i
 
 # target to preprocess a source file
-my_lib.cc.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/my_lib.cc.i
-	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/my_lib.cc.i
-.PHONY : my_lib.cc.i
+app/main.cc.i:
+	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/app/main.cc.i
+.PHONY : app/main.cc.i
 
-my_lib.s: my_lib.cc.s
+app/main.s: app/main.cc.s
 
-.PHONY : my_lib.s
+.PHONY : app/main.s
 
 # target to generate assembly for a file
-my_lib.cc.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/my_lib.cc.s
-	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/my_lib.cc.s
-.PHONY : my_lib.cc.s
+app/main.cc.s:
+	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/app/main.cc.s
+.PHONY : app/main.cc.s
+
+src/my_lib.o: src/my_lib.cc.o
+
+.PHONY : src/my_lib.o
+
+# target to build an object file
+src/my_lib.cc.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/my_lib.cc.o
+.PHONY : src/my_lib.cc.o
+
+src/my_lib.i: src/my_lib.cc.i
+
+.PHONY : src/my_lib.i
+
+# target to preprocess a source file
+src/my_lib.cc.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/my_lib.cc.i
+.PHONY : src/my_lib.cc.i
+
+src/my_lib.s: src/my_lib.cc.s
+
+.PHONY : src/my_lib.s
+
+# target to generate assembly for a file
+src/my_lib.cc.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/my_lib.cc.s
+.PHONY : src/my_lib.cc.s
 
 # Help Target
 help:
@@ -203,12 +200,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... Library"
 	@echo "... Executable"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... my_lib.o"
-	@echo "... my_lib.i"
-	@echo "... my_lib.s"
+	@echo "... app/main.o"
+	@echo "... app/main.i"
+	@echo "... app/main.s"
+	@echo "... src/my_lib.o"
+	@echo "... src/my_lib.i"
+	@echo "... src/my_lib.s"
 .PHONY : help
 
 

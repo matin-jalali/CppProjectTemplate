@@ -1,0 +1,3 @@
+/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles/rebuild_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles/Executable.dir
+/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles/edit_cache.dir

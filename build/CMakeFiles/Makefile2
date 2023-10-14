@@ -60,76 +60,112 @@ CMAKE_SOURCE_DIR = /home/mtn/Documents/repository/CppProjectTemplate
 CMAKE_BINARY_DIR = /home/mtn/Documents/repository/CppProjectTemplate/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/Library.dir
+# Directory level rules for directory src
+
+# Convenience name for "all" pass in the directory.
+src/all: src/CMakeFiles/Library.dir/all
+
+.PHONY : src/all
+
+# Convenience name for "clean" pass in the directory.
+src/clean: src/CMakeFiles/Library.dir/clean
+
+.PHONY : src/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/preinstall:
+
+.PHONY : src/preinstall
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/Library.dir
 
 # All Build rule for target.
-CMakeFiles/Library.dir/all:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/depend
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/build
+src/CMakeFiles/Library.dir/all:
+	$(MAKE) -f src/CMakeFiles/Library.dir/build.make src/CMakeFiles/Library.dir/depend
+	$(MAKE) -f src/CMakeFiles/Library.dir/build.make src/CMakeFiles/Library.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles --progress-num=3,4 "Built target Library"
-.PHONY : CMakeFiles/Library.dir/all
+.PHONY : src/CMakeFiles/Library.dir/all
 
 # Include target in all.
-all: CMakeFiles/Library.dir/all
+all: src/CMakeFiles/Library.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Library.dir/rule: cmake_check_build_system
+src/CMakeFiles/Library.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Library.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Library.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles 0
-.PHONY : CMakeFiles/Library.dir/rule
+.PHONY : src/CMakeFiles/Library.dir/rule
 
 # Convenience name for target.
-Library: CMakeFiles/Library.dir/rule
+Library: src/CMakeFiles/Library.dir/rule
 
 .PHONY : Library
 
 # clean rule for target.
-CMakeFiles/Library.dir/clean:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/clean
-.PHONY : CMakeFiles/Library.dir/clean
+src/CMakeFiles/Library.dir/clean:
+	$(MAKE) -f src/CMakeFiles/Library.dir/build.make src/CMakeFiles/Library.dir/clean
+.PHONY : src/CMakeFiles/Library.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/Library.dir/clean
+clean: src/CMakeFiles/Library.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Executable.dir
+# Directory level rules for directory app
+
+# Convenience name for "all" pass in the directory.
+app/all: app/CMakeFiles/Executable.dir/all
+
+.PHONY : app/all
+
+# Convenience name for "clean" pass in the directory.
+app/clean: app/CMakeFiles/Executable.dir/clean
+
+.PHONY : app/clean
+
+# Convenience name for "preinstall" pass in the directory.
+app/preinstall:
+
+.PHONY : app/preinstall
+
+#=============================================================================
+# Target rules for target app/CMakeFiles/Executable.dir
 
 # All Build rule for target.
-CMakeFiles/Executable.dir/all: CMakeFiles/Library.dir/all
-	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/depend
-	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/build
+app/CMakeFiles/Executable.dir/all: src/CMakeFiles/Library.dir/all
+	$(MAKE) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/depend
+	$(MAKE) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles --progress-num=1,2 "Built target Executable"
-.PHONY : CMakeFiles/Executable.dir/all
+.PHONY : app/CMakeFiles/Executable.dir/all
 
 # Include target in all.
-all: CMakeFiles/Executable.dir/all
+all: app/CMakeFiles/Executable.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Executable.dir/rule: cmake_check_build_system
+app/CMakeFiles/Executable.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Executable.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/Executable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles 0
-.PHONY : CMakeFiles/Executable.dir/rule
+.PHONY : app/CMakeFiles/Executable.dir/rule
 
 # Convenience name for target.
-Executable: CMakeFiles/Executable.dir/rule
+Executable: app/CMakeFiles/Executable.dir/rule
 
 .PHONY : Executable
 
 # clean rule for target.
-CMakeFiles/Executable.dir/clean:
-	$(MAKE) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/clean
-.PHONY : CMakeFiles/Executable.dir/clean
+app/CMakeFiles/Executable.dir/clean:
+	$(MAKE) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/clean
+.PHONY : app/CMakeFiles/Executable.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/Executable.dir/clean
+clean: app/CMakeFiles/Executable.dir/clean
 
 .PHONY : clean
 

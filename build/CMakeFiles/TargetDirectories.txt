@@ -1,4 +1,8 @@
 /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles/rebuild_cache.dir
 /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles/edit_cache.dir
-/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles/Library.dir
-/home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles/Executable.dir
+/home/mtn/Documents/repository/CppProjectTemplate/build/src/CMakeFiles/rebuild_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/build/src/CMakeFiles/Library.dir
+/home/mtn/Documents/repository/CppProjectTemplate/build/src/CMakeFiles/edit_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/build/app/CMakeFiles/rebuild_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/build/app/CMakeFiles/Executable.dir
+/home/mtn/Documents/repository/CppProjectTemplate/build/app/CMakeFiles/edit_cache.dir

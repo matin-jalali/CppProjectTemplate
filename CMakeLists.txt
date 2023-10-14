@@ -4,9 +4,5 @@ project(CppProjectTemplate
 	VERSION 1.0.0
 	LANGUAGES CXX C)
 
-add_library(Library STATIC src/my_lib.cc)
-
-add_executable(Executable app/main.cc)
-
-target_link_libraries(Executable PUBLIC Library)
-
+add_subdirectory(src)
+add_subdirectory(app)

@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/mtn/Documents/repository/CppProjectTemplate/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles /home/mtn/Documents/repository/CppProjectTemplate/build/app/CMakeFiles/progress.marks
+	cd /home/mtn/Documents/repository/CppProjectTemplate/build && $(MAKE) -f CMakeFiles/Makefile2 app/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtn/Documents/repository/CppProjectTemplate/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/mtn/Documents/repository/CppProjectTemplate/build && $(MAKE) -f CMakeFiles/Makefile2 app/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,44 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/mtn/Documents/repository/CppProjectTemplate/build && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/mtn/Documents/repository/CppProjectTemplate/build && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mtn/Documents/repository/CppProjectTemplate/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Library
+# Convenience name for target.
+app/CMakeFiles/Executable.dir/rule:
+	cd /home/mtn/Documents/repository/CppProjectTemplate/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/Executable.dir/rule
+.PHONY : app/CMakeFiles/Executable.dir/rule
 
-# Build rule for target.
-Library: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Library
-.PHONY : Library
+# Convenience name for target.
+Executable: app/CMakeFiles/Executable.dir/rule
 
-# fast build rule for target.
-Library/fast:
-	$(MAKE) -f src/CMakeFiles/Library.dir/build.make src/CMakeFiles/Library.dir/build
-.PHONY : Library/fast
-
-#=============================================================================
-# Target rules for targets named Executable
-
-# Build rule for target.
-Executable: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Executable
 .PHONY : Executable
 
 # fast build rule for target.
 Executable/fast:
-	$(MAKE) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/build
+	cd /home/mtn/Documents/repository/CppProjectTemplate/build && $(MAKE) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/build
 .PHONY : Executable/fast
+
+main.o: main.cc.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cc.o:
+	cd /home/mtn/Documents/repository/CppProjectTemplate/build && $(MAKE) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/main.cc.o
+.PHONY : main.cc.o
+
+main.i: main.cc.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cc.i:
+	cd /home/mtn/Documents/repository/CppProjectTemplate/build && $(MAKE) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/main.cc.i
+.PHONY : main.cc.i
+
+main.s: main.cc.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cc.s:
+	cd /home/mtn/Documents/repository/CppProjectTemplate/build && $(MAKE) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/main.cc.s
+.PHONY : main.cc.s
 
 # Help Target
 help:
@@ -143,9 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... Library"
 	@echo "... Executable"
+	@echo "... edit_cache"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -157,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mtn/Documents/repository/CppProjectTemplate/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

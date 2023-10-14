@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../src/./my_lib.h
+iostream
+-
+
 /home/mtn/Documents/repository/CppProjectTemplate/app/main.cc
 my_lib.h
 /home/mtn/Documents/repository/CppProjectTemplate/app/my_lib.h

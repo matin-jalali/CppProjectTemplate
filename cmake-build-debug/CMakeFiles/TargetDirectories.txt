@@ -1,0 +1,12 @@
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/external/json/CMakeFiles/rebuild_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/external/json/CMakeFiles/edit_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/configured/CMakeFiles/rebuild_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/configured/CMakeFiles/edit_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/src/CMakeFiles/Library.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/app/CMakeFiles/rebuild_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/app/CMakeFiles/edit_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/app/CMakeFiles/Executable.dir

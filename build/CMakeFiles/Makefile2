@@ -60,6 +60,24 @@ CMAKE_SOURCE_DIR = /home/mtn/Documents/repository/CppProjectTemplate
 CMAKE_BINARY_DIR = /home/mtn/Documents/repository/CppProjectTemplate/build
 
 #=============================================================================
+# Directory level rules for directory external/json
+
+# Convenience name for "all" pass in the directory.
+external/json/all:
+
+.PHONY : external/json/all
+
+# Convenience name for "clean" pass in the directory.
+external/json/clean:
+
+.PHONY : external/json/clean
+
+# Convenience name for "preinstall" pass in the directory.
+external/json/preinstall:
+
+.PHONY : external/json/preinstall
+
+#=============================================================================
 # Directory level rules for directory configured
 
 # Convenience name for "all" pass in the directory.

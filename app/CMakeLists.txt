@@ -1,3 +1,3 @@
 add_executable(Executable main.cc)
 
-target_link_libraries(Executable PUBLIC Library)
+target_link_libraries(Executable PUBLIC ${LIBRARY_NAME})

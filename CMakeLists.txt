@@ -5,6 +5,7 @@ project(CppProjectTemplate
 	LANGUAGES CXX C)
 
 set(LIBRARY_NAME Library)
+set(EXECUTABLE_NAME Executable)
 
 add_subdirectory(src)
 add_subdirectory(app)

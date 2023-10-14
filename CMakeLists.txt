@@ -13,6 +13,7 @@ option(COMPILE_EXECUTABLE "whether to compile the executable" OFF)
 set(LIBRARY_NAME Library)
 set(EXECUTABLE_NAME Executable)
 
+add_subdirectory(configured)
 add_subdirectory(src)
 if (COMPILE_EXECUTABLE)
   add_subdirectory(app)

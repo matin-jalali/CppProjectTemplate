@@ -1,1 +1,1 @@
-/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/Executable.dir/main.cc.o  -o Executable ../src/libLibrary.a 
+/usr/bin/c++    -rdynamic CMakeFiles/Executable.dir/main.cc.o  -o Executable ../src/libLibrary.a 

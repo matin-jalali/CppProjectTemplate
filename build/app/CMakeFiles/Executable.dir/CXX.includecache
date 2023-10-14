@@ -13,4 +13,12 @@ iostream
 /home/mtn/Documents/repository/CppProjectTemplate/app/main.cc
 my_lib.h
 /home/mtn/Documents/repository/CppProjectTemplate/app/my_lib.h
+config.hpp
+/home/mtn/Documents/repository/CppProjectTemplate/app/config.hpp
+
+configured_files/include/config.hpp
+cstdint
+-
+string_view
+-
 

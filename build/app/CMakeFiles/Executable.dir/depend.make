@@ -3,4 +3,5 @@
 
 app/CMakeFiles/Executable.dir/main.cc.o: ../src/./my_lib.h
 app/CMakeFiles/Executable.dir/main.cc.o: ../app/main.cc
+app/CMakeFiles/Executable.dir/main.cc.o: configured_files/include/config.hpp
 

@@ -1,0 +1,3 @@
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/cxxopts-subbuild/CMakeFiles/rebuild_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/cxxopts-subbuild/CMakeFiles/edit_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/cxxopts-subbuild/CMakeFiles/cxxopts-populate.dir

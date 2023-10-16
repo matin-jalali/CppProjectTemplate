@@ -1,20 +1,13 @@
 /home/mtn/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/mtn/clion-2021.3.4/bin/ninja/linux/ninja -G Ninja /home/mtn/Documents/repository/CppProjectTemplate
--- The CXX compiler identification is GNU 7.5.0
--- The C compiler identification is GNU 7.5.0
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Found Git: /usr/bin/git (found version "2.17.1") 
-START SUBMODULE UPDATE
-Adding: external/json/CMakeLists.txt
--- Using the multi-header code from /home/mtn/Documents/repository/CppProjectTemplate/external/json/include/
+-- Using the multi-header code from /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/nlohmann_json-src/include/
+-- Module support is disabled.
+-- Version: 9.1.0
+-- Build type: Debug
+-- CXX_STANDARD: 17
+-- Required features: cxx_variadic_templates
+-- Build spdlog: 1.11.0
+-- Build type: Debug
+w/o exe. compiling
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug

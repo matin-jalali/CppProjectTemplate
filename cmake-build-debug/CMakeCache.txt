@@ -14,6 +14,33 @@
 # EXTERNAL cache entries
 ########################
 
+//Build documentation examples
+CATCH_BUILD_EXAMPLES:BOOL=OFF
+
+//Build extra tests
+CATCH_BUILD_EXTRA_TESTS:BOOL=OFF
+
+//Builds static library from the main implementation. EXPERIMENTAL
+CATCH_BUILD_STATIC_LIBRARY:BOOL=OFF
+
+//Build SelfTest project
+CATCH_BUILD_TESTING:BOOL=ON
+
+//Generate coverage for codecov.io
+CATCH_ENABLE_COVERAGE:BOOL=OFF
+
+//Enable all warnings as errors
+CATCH_ENABLE_WERROR:BOOL=ON
+
+//Install documentation alongside library
+CATCH_INSTALL_DOCS:BOOL=ON
+
+//Install contrib alongside library
+CATCH_INSTALL_HELPERS:BOOL=ON
+
+//Perform SelfTests with Valgrind
+CATCH_USE_VALGRIND:BOOL=OFF
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -272,6 +299,30 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //whether to compile the executable
 COMPILE_EXECUTABLE:BOOL=ON
 
+//Set to ON to build examples
+CXXOPTS_BUILD_EXAMPLES:BOOL=OFF
+
+//Set to ON to build tests
+CXXOPTS_BUILD_TESTS:BOOL=OFF
+
+//Generate the install target
+CXXOPTS_ENABLE_INSTALL:BOOL=OFF
+
+//Add warnings to CMAKE_CXX_FLAGS
+CXXOPTS_ENABLE_WARNINGS:BOOL=OFF
+
+//Use ICU Unicode library
+CXXOPTS_USE_UNICODE_HELP:BOOL=OFF
+
+//Value Computed by CMake
+Catch2_BINARY_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/catch2-build
+
+//Value Computed by CMake
+Catch2_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Catch2_SOURCE_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/catch2-src
+
 //Value Computed by CMake
 CppProjectTemplate_BINARY_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug
 
@@ -280,6 +331,100 @@ CppProjectTemplate_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 CppProjectTemplate_SOURCE_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate
+
+//Directory under which to collect all populated content
+FETCHCONTENT_BASE_DIR:PATH=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps
+
+//Disables all attempts to download or update content and assumes
+// source dirs already exist
+FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
+
+//Enables QUIET option for all content population
+FETCHCONTENT_QUIET:BOOL=ON
+
+//When not empty, overrides where to find pre-populated content
+// for Catch2
+FETCHCONTENT_SOURCE_DIR_CATCH2:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for cxxopts
+FETCHCONTENT_SOURCE_DIR_CXXOPTS:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for fmt
+FETCHCONTENT_SOURCE_DIR_FMT:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for nlohmann_json
+FETCHCONTENT_SOURCE_DIR_NLOHMANN_JSON:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for spdlog
+FETCHCONTENT_SOURCE_DIR_SPDLOG:PATH=
+
+//Enables UPDATE_DISCONNECTED behavior for all content population
+FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of Catch2
+FETCHCONTENT_UPDATES_DISCONNECTED_CATCH2:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of cxxopts
+FETCHCONTENT_UPDATES_DISCONNECTED_CXXOPTS:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of fmt
+FETCHCONTENT_UPDATES_DISCONNECTED_FMT:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of nlohmann_json
+FETCHCONTENT_UPDATES_DISCONNECTED_NLOHMANN_JSON:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of spdlog
+FETCHCONTENT_UPDATES_DISCONNECTED_SPDLOG:BOOL=OFF
+
+//Value Computed by CMake
+FMT_BINARY_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/fmt-build
+
+//Generate the cuda-test target.
+FMT_CUDA_TEST:BOOL=OFF
+
+//Debug library postfix.
+FMT_DEBUG_POSTFIX:STRING=d
+
+//Generate the doc target.
+FMT_DOC:BOOL=OFF
+
+//Generate the fuzz target.
+FMT_FUZZ:BOOL=OFF
+
+//Installation directory for include files, a relative path that
+// will be joined with /usr/local or an absolute path.
+FMT_INC_DIR:STRING=include
+
+//Generate the install target.
+FMT_INSTALL:BOOL=OFF
+
+//Value Computed by CMake
+FMT_IS_TOP_LEVEL:STATIC=OFF
+
+//Build a module instead of a traditional library.
+FMT_MODULE:BOOL=OFF
+
+//Include core requiring OS (Windows/Posix) 
+FMT_OS:BOOL=ON
+
+//Enable extra warnings and expensive tests.
+FMT_PEDANTIC:BOOL=OFF
+
+//Value Computed by CMake
+FMT_SOURCE_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/fmt-src
+
+//Expose headers with marking them as system.
+FMT_SYSTEM_HEADERS:BOOL=OFF
+
+//Generate the test target.
+FMT_TEST:BOOL=OFF
+
+//Halt the compilation with an error on compiler warnings.
+FMT_WERROR:BOOL=OFF
 
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
@@ -314,14 +459,115 @@ JSON_MultipleHeaders:BOOL=ON
 //Include as system headers (skip for clang-tidy).
 JSON_SystemInclude:BOOL=OFF
 
+//Dependencies for the target
+Library_LIB_DEPENDS:STATIC=general;fmt::fmt;general;spdlog::spdlog;
+
+//Build all artifacts
+SPDLOG_BUILD_ALL:BOOL=OFF
+
+//Build benchmarks (Requires https://github.com/google/benchmark.git
+// to be installed)
+SPDLOG_BUILD_BENCH:BOOL=OFF
+
+//Build example
+SPDLOG_BUILD_EXAMPLE:BOOL=OFF
+
+//Build header only example
+SPDLOG_BUILD_EXAMPLE_HO:BOOL=OFF
+
+//Build position independent code (-fPIC)
+SPDLOG_BUILD_PIC:BOOL=OFF
+
+//Build shared library
+SPDLOG_BUILD_SHARED:BOOL=OFF
+
+//Build tests
+SPDLOG_BUILD_TESTS:BOOL=OFF
+
+//Build tests using the header only version
+SPDLOG_BUILD_TESTS_HO:BOOL=OFF
+
+//Enable compiler warnings
+SPDLOG_BUILD_WARNINGS:BOOL=OFF
+
+//Use CLOCK_REALTIME_COARSE instead of the regular clock,
+SPDLOG_CLOCK_COARSE:BOOL=OFF
+
+//Disable default logger creation
+SPDLOG_DISABLE_DEFAULT_LOGGER:BOOL=OFF
+
+//Build static or shared library using precompiled header to speed
+// up compilation time
+SPDLOG_ENABLE_PCH:BOOL=OFF
+
+//Use external fmt library instead of bundled
+SPDLOG_FMT_EXTERNAL:BOOL=OFF
+
+//Use external fmt header-only library instead of bundled
+SPDLOG_FMT_EXTERNAL_HO:BOOL=OFF
+
+//Generate the install target
+SPDLOG_INSTALL:BOOL=OFF
+
+//prevent spdlog from using of std::atomic log levels (use only
+// if your code never modifies log levels concurrently
+SPDLOG_NO_ATOMIC_LEVELS:BOOL=OFF
+
+//Compile with -fno-exceptions. Call abort() on any spdlog exceptions
+SPDLOG_NO_EXCEPTIONS:BOOL=OFF
+
+//prevent spdlog from querying the thread id on each log call if
+// thread id is not needed
+SPDLOG_NO_THREAD_ID:BOOL=OFF
+
+//prevent spdlog from using thread local storage
+SPDLOG_NO_TLS:BOOL=OFF
+
+//Prevent from child processes to inherit log file descriptors
+SPDLOG_PREVENT_CHILD_FD:BOOL=OFF
+
+//Enable address sanitizer in tests
+SPDLOG_SANITIZE_ADDRESS:BOOL=OFF
+
+//run clang-tidy
+SPDLOG_TIDY:BOOL=OFF
+
+//Use std::format instead of fmt library. No compile-time format
+// string checking.
+SPDLOG_USE_STD_FORMAT:BOOL=OFF
+
+//non supported option
+SPDLOG_WCHAR_FILENAMES:BOOL=OFF
+
+//non supported option
+SPDLOG_WCHAR_SUPPORT:BOOL=OFF
+
 //Value Computed by CMake
-nlohmann_json_BINARY_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/external/json
+cxxopts_BINARY_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/cxxopts-build
+
+//Value Computed by CMake
+cxxopts_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+cxxopts_SOURCE_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/cxxopts-src
+
+//Value Computed by CMake
+nlohmann_json_BINARY_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/nlohmann_json-build
 
 //Value Computed by CMake
 nlohmann_json_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-nlohmann_json_SOURCE_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/external/json
+nlohmann_json_SOURCE_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/nlohmann_json-src
+
+//Value Computed by CMake
+spdlog_BINARY_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/spdlog-build
+
+//Value Computed by CMake
+spdlog_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+spdlog_SOURCE_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/spdlog-src
 
 
 ########################
@@ -404,6 +650,14 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
+//Have library pthreads
+CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
+//Have library pthread
+CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/mtn/Documents/repository/CppProjectTemplate
@@ -456,7 +710,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -499,11 +753,18 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Details about finding Git
-FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.17.1()]
+CXXOPTS__VERSION_MAJOR:INTERNAL=3
+CXXOPTS__VERSION_MINOR:INTERNAL=0
+CXXOPTS__VERSION_PATCH:INTERNAL=0
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 NLOHMANN_JSON_CONFIG_INSTALL_DIR:INTERNAL=share/cmake/nlohmann_json
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+//Test has_std_17_flag
+has_std_17_flag:INTERNAL=1
+//Test has_std_1z_flag
+has_std_1z_flag:INTERNAL=1
 

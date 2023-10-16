@@ -139,11 +139,7 @@
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "test",
-					"targetIndexes" : 
-					[
-						4
-					]
+					"source" : "test"
 				},
 				{
 					"build" : "app",
@@ -185,8 +181,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						1,
-						4
+						1
 					]
 				},
 				{
@@ -268,13 +263,6 @@
 					"jsonFile" : "target-spdlog-Debug-9728992188945640b1f3.json",
 					"name" : "spdlog",
 					"projectIndex" : 3
-				},
-				{
-					"directoryIndex" : 9,
-					"id" : "unit_tests::@36f028580bb02cc8272a",
-					"jsonFile" : "target-unit_tests-Debug-b907a4576842f47f96e3.json",
-					"name" : "unit_tests",
-					"projectIndex" : 0
 				}
 			]
 		}

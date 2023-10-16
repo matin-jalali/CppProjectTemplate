@@ -1754,6 +1754,18 @@
 			"value" : "/home/mtn/Documents/repository/CppProjectTemplate"
 		},
 		{
+			"name" : "ENABLE_TESTING",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enable a unit testing build"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "FETCHCONTENT_BASE_DIR",
 			"properties" : 
 			[

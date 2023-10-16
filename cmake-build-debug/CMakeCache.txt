@@ -332,6 +332,9 @@ CppProjectTemplate_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 CppProjectTemplate_SOURCE_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate
 
+//Enable a unit testing build
+ENABLE_TESTING:BOOL=OFF
+
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps
 

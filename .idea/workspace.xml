@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="CppProjectTemplate" targetName="unit_tests" />
       <config projectName="CppProjectTemplate" targetName="spdlog" />
       <config projectName="CppProjectTemplate" targetName="Library" />
+      <config projectName="CppProjectTemplate" targetName="Executable" />
       <config projectName="CppProjectTemplate" targetName="fmt" />
     </generated>
   </component>
@@ -15,24 +15,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05be7dcf-12c5-4929-bd21-348fba032e73" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-0daad7c892164cdb3387.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-767c853951d605bfb614.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-827506ac71338f9a733a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-app-Debug-94c5f210ca04b1028ae5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-10-16T10-19-29-0225.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Executable-Debug-fdb30073ba92e1519f07.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Library-Debug-a9a4d614acc0c4b91b53.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-a349a155dac59c90cefa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-076f1fb754c8660237f9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-10-16T10-55-32-0046.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-unit_tests-Debug-b907a4576842f47f96e3.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/catch2-subbuild/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/catch2-subbuild/.ninja_log" afterDir="false" />
@@ -40,15 +32,8 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/fmt-subbuild/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/fmt-subbuild/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/nlohmann_json-subbuild/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/nlohmann_json-subbuild/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/spdlog-subbuild/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/spdlog-subbuild/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/app/CMakeFiles/Executable.dir/main.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/app/Executable" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Library.dir/my_lib.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Library.dir/my_lib.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libLibrary.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/libLibrary.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_lib.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_lib.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_lib.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_lib.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +80,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Catch.Factorials are computed">
+  <component name="RunManager" selected="CMake Application.Executable">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -107,10 +92,9 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="unit_tests" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CppProjectTemplate" TARGET_NAME="unit_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CppProjectTemplate" RUN_TARGET_NAME="unit_tests" TEST_MODE="SUITE_TEST">
+    <configuration name="Executable" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CppProjectTemplate" TARGET_NAME="Executable" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CppProjectTemplate" RUN_TARGET_NAME="Executable">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="Library" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CppProjectTemplate" TARGET_NAME="Library" CONFIG_NAME="Debug">
@@ -129,11 +113,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Catch.unit_tests" />
+      <item itemvalue="Catch.Factorials are computed" />
+      <item itemvalue="CMake Application.Executable" />
       <item itemvalue="CMake Application.fmt" />
       <item itemvalue="CMake Application.spdlog" />
       <item itemvalue="CMake Application.Library" />
-      <item itemvalue="Catch.Factorials are computed" />
     </list>
     <recent_temporary>
       <list>
@@ -149,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697452937929</updated>
-      <workItem from="1697452941975" duration="711000" />
+      <workItem from="1697452941975" duration="1726000" />
     </task>
     <servers />
   </component>

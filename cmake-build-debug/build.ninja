@@ -469,41 +469,6 @@ build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 build test/edit_cache: phony test/CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target unit_tests
-
-
-#############################################
-# Order-only phony target for unit_tests
-
-build cmake_object_order_depends_target_unit_tests: phony || cmake_object_order_depends_target_Library cmake_object_order_depends_target_fmt cmake_object_order_depends_target_spdlog
-
-build test/CMakeFiles/unit_tests.dir/main.cpp.o: CXX_COMPILER__unit_tests_Debug /home/mtn/Documents/repository/CppProjectTemplate/test/main.cpp || cmake_object_order_depends_target_unit_tests
-  DEFINES = -DSPDLOG_COMPILED_LIB
-  DEP_FILE = test/CMakeFiles/unit_tests.dir/main.cpp.o.d
-  FLAGS = -g -std=c++1z
-  INCLUDES = -I/home/mtn/Documents/repository/CppProjectTemplate/test/. -I/home/mtn/Documents/repository/CppProjectTemplate/src/. -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/configured_files/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/nlohmann_json-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/fmt-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/cxxopts-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/spdlog-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/catch2-src/single_include
-  OBJECT_DIR = test/CMakeFiles/unit_tests.dir
-  OBJECT_FILE_DIR = test/CMakeFiles/unit_tests.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target unit_tests
-
-
-#############################################
-# Link the executable test/unit_tests
-
-build test/unit_tests: CXX_EXECUTABLE_LINKER__unit_tests_Debug test/CMakeFiles/unit_tests.dir/main.cpp.o | src/libLibrary.a _deps/fmt-build/libfmtd.a _deps/spdlog-build/libspdlogd.a || _deps/fmt-build/libfmtd.a _deps/spdlog-build/libspdlogd.a src/libLibrary.a
-  FLAGS = -g
-  LINK_FLAGS = -rdynamic
-  LINK_LIBRARIES = src/libLibrary.a  _deps/fmt-build/libfmtd.a  _deps/spdlog-build/libspdlogd.a  -lpthread
-  OBJECT_DIR = test/CMakeFiles/unit_tests.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = test/unit_tests
-  TARGET_PDB = unit_tests.dbg
-
-# =============================================================================
 # Write statements declared in CMakeLists.txt:
 # /home/mtn/Documents/repository/CppProjectTemplate/CMakeLists.txt
 # =============================================================================
@@ -583,8 +548,6 @@ build libspdlogd.a: phony _deps/spdlog-build/libspdlogd.a
 
 build spdlog: phony _deps/spdlog-build/libspdlogd.a
 
-build unit_tests: phony test/unit_tests
-
 # =============================================================================
 # Folder targets.
 
@@ -663,7 +626,7 @@ build src/all: phony src/libLibrary.a
 #############################################
 # Folder: /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/test
 
-build test/all: phony test/unit_tests
+build test/all: phony
 
 # =============================================================================
 # Unknown Build Time Dependencies.

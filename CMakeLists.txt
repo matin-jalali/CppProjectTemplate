@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD 		17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS 	OFF)
 
+option(ENABLE_TESTING "Enable a unit testing build" ON)
 option(COMPILE_EXECUTABLE "whether to compile the executable" ON)
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")

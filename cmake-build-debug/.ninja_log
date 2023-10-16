@@ -1,18 +1,18 @@
 # ninja log v5
+247	392	1697456582735029553	app/Executable	8c8a00438037c746
 12	2447	1697453300523563034	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o	952de98bddf652c7
 0	3773	1697453301847569998	_deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o	8e86f4fe71ca542f
 11	2855	1697453300927565164	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o	4e985207cb676a5
-0	385	1697453732028397374	build.ninja	6297a7236df7aa56
+0	518	1697456592523096326	build.ninja	6297a7236df7aa56
 2855	7276	1697453305351588255	src/CMakeFiles/Library.dir/my_lib.cc.o	32600c9880c134f5
 2447	3792	1697453301867570103	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/cfg.cpp.o	53893e7fff808ff8
+2	247	1697456582587028542	app/CMakeFiles/Executable.dir/main.cc.o	4c31dee6c4ef21ef
 6	8385	1697453306451593936	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o	f4ec6d85aed8debe
 8385	8604	1697453306651594966	_deps/spdlog-build/libspdlogd.a	2b10f454c9f05fc1
 3	1318	1697453299395557074	_deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o	cf49f2d1a87612c6
 2584	4912	1697453302987575966	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o	f4283e5c28286164
 1319	3493	1697453301567568528	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/async.cpp.o	b9c3519667f06c37
 10	2584	1697453300659563751	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o	908b07d1517f722
-1	617	1697453653140415593	test/CMakeFiles/unit_tests.dir/main.cpp.o	7160d76e33cf92a0
+1	623	1697453732668396993	test/CMakeFiles/unit_tests.dir/main.cpp.o	7160d76e33cf92a0
 3773	3869	1697453301943570502	_deps/fmt-build/libfmtd.a	ef2537c8ca472496
 8604	8635	1697453306711595276	src/libLibrary.a	4096a6ddc61a76e7
-0	518	1697453732028397374	build.ninja	6297a7236df7aa56
-1	623	1697453732668396993	test/CMakeFiles/unit_tests.dir/main.cpp.o	7160d76e33cf92a0

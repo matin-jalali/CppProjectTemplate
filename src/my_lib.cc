@@ -4,6 +4,9 @@
 #include <cxxopts.hpp>
 #include <spdlog/spdlog.h>
 
+/**
+ * @brief print hello world for test and versions.
+ */
 void print_hello_world() {
   std::cout << "Hello world!" << std::endl;
 

@@ -1,0 +1,3 @@
+rm -rf html
+doxygen
+

@@ -1,11 +1,11 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/home/mtn/clion-2021.3.4/bin/ninja/linux/ninja cmTC_16438 && [1/2] Building C object CMakeFiles/cmTC_16438.dir/src.c.o
-[2/2] Linking C executable cmTC_16438
-FAILED: cmTC_16438 
-: && /usr/bin/cc   CMakeFiles/cmTC_16438.dir/src.c.o -o cmTC_16438   && :
-CMakeFiles/cmTC_16438.dir/src.c.o: In function `main':
+Run Build Command(s):/home/mtn/clion-2021.3.4/bin/ninja/linux/ninja cmTC_79858 && [1/2] Building C object CMakeFiles/cmTC_79858.dir/src.c.o
+[2/2] Linking C executable cmTC_79858
+FAILED: cmTC_79858 
+: && /usr/bin/cc   CMakeFiles/cmTC_79858.dir/src.c.o -o cmTC_79858   && :
+CMakeFiles/cmTC_79858.dir/src.c.o: In function `main':
 src.c:(.text+0x3e): undefined reference to `pthread_create'
 src.c:(.text+0x4a): undefined reference to `pthread_detach'
 src.c:(.text+0x56): undefined reference to `pthread_cancel'
@@ -39,10 +39,10 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/home/mtn/clion-2021.3.4/bin/ninja/linux/ninja cmTC_4204a && [1/2] Building C object CMakeFiles/cmTC_4204a.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_4204a
-FAILED: cmTC_4204a 
-: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_4204a.dir/CheckFunctionExists.c.o -o cmTC_4204a  -lpthreads && :
+Run Build Command(s):/home/mtn/clion-2021.3.4/bin/ninja/linux/ninja cmTC_218b3 && [1/2] Building C object CMakeFiles/cmTC_218b3.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_218b3
+FAILED: cmTC_218b3 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_218b3.dir/CheckFunctionExists.c.o -o cmTC_218b3  -lpthreads && :
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.

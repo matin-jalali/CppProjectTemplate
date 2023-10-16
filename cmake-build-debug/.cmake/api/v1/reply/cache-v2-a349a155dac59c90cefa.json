@@ -1151,7 +1151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "10"
+			"value" : "11"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1752,18 +1752,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/mtn/Documents/repository/CppProjectTemplate"
-		},
-		{
-			"name" : "DOXYGEN_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for DOXYGEN."
-				}
-			],
-			"type" : "PATH",
-			"value" : "DOXYGEN_DIR-NOTFOUND"
 		},
 		{
 			"name" : "FETCHCONTENT_BASE_DIR",

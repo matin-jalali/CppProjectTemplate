@@ -415,6 +415,9 @@
 			"path" : "src/CMakeLists.txt"
 		},
 		{
+			"path" : "test/CMakeLists.txt"
+		},
+		{
 			"path" : "app/CMakeLists.txt"
 		}
 	],

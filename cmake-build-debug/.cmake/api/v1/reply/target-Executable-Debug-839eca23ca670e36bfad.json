@@ -80,6 +80,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/spdlog-src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/catch2-src/single_include"
 				}
 			],
 			"language" : "CXX",
@@ -87,6 +91,25 @@
 			{
 				"backtraces" : 
 				[
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
+					2,
 					2,
 					2
 				],

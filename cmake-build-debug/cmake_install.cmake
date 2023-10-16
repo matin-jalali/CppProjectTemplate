@@ -51,6 +51,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/catch2-build/cmake_install.cmake")
   include("/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/configured/cmake_install.cmake")
   include("/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/src/cmake_install.cmake")
+  include("/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/test/cmake_install.cmake")
   include("/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/app/cmake_install.cmake")
 
 endif()

@@ -420,7 +420,7 @@ build src/CMakeFiles/Library.dir/my_lib.cc.o: CXX_COMPILER__Library_Debug /home/
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = src/CMakeFiles/Library.dir/my_lib.cc.o.d
   FLAGS = -g -std=c++1z
-  INCLUDES = -I/home/mtn/Documents/repository/CppProjectTemplate/src/. -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/configured_files/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/nlohmann_json-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/fmt-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/cxxopts-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/spdlog-src/include
+  INCLUDES = -I/home/mtn/Documents/repository/CppProjectTemplate/src/. -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/configured_files/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/nlohmann_json-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/fmt-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/cxxopts-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/spdlog-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/catch2-src/single_include
   OBJECT_DIR = src/CMakeFiles/Library.dir
   OBJECT_FILE_DIR = src/CMakeFiles/Library.dir
 
@@ -439,6 +439,69 @@ build src/libLibrary.a: CXX_STATIC_LIBRARY_LINKER__Library_Debug src/CMakeFiles/
   PRE_LINK = :
   TARGET_FILE = src/libLibrary.a
   TARGET_PDB = Library.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/mtn/Documents/repository/CppProjectTemplate/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/test && /home/mtn/clion-2021.3.4/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/mtn/Documents/repository/CppProjectTemplate -B/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/rebuild_cache: phony test/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/test && /home/mtn/clion-2021.3.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build test/edit_cache: phony test/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target unit_tests
+
+
+#############################################
+# Order-only phony target for unit_tests
+
+build cmake_object_order_depends_target_unit_tests: phony || cmake_object_order_depends_target_Library cmake_object_order_depends_target_fmt cmake_object_order_depends_target_spdlog
+
+build test/CMakeFiles/unit_tests.dir/main.cpp.o: CXX_COMPILER__unit_tests_Debug /home/mtn/Documents/repository/CppProjectTemplate/test/main.cpp || cmake_object_order_depends_target_unit_tests
+  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEP_FILE = test/CMakeFiles/unit_tests.dir/main.cpp.o.d
+  FLAGS = -g -std=c++1z
+  INCLUDES = -I/home/mtn/Documents/repository/CppProjectTemplate/test/. -I/home/mtn/Documents/repository/CppProjectTemplate/src/. -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/configured_files/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/nlohmann_json-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/fmt-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/cxxopts-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/spdlog-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/catch2-src/single_include
+  OBJECT_DIR = test/CMakeFiles/unit_tests.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/unit_tests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unit_tests
+
+
+#############################################
+# Link the executable test/unit_tests
+
+build test/unit_tests: CXX_EXECUTABLE_LINKER__unit_tests_Debug test/CMakeFiles/unit_tests.dir/main.cpp.o | src/libLibrary.a _deps/fmt-build/libfmtd.a _deps/spdlog-build/libspdlogd.a || _deps/fmt-build/libfmtd.a _deps/spdlog-build/libspdlogd.a src/libLibrary.a
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = src/libLibrary.a  _deps/fmt-build/libfmtd.a  _deps/spdlog-build/libspdlogd.a  -lpthread
+  OBJECT_DIR = test/CMakeFiles/unit_tests.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/unit_tests
+  TARGET_PDB = unit_tests.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -481,7 +544,7 @@ build app/CMakeFiles/Executable.dir/main.cc.o: CXX_COMPILER__Executable_Debug /h
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = app/CMakeFiles/Executable.dir/main.cc.o.d
   FLAGS = -g -std=c++1z
-  INCLUDES = -I/home/mtn/Documents/repository/CppProjectTemplate/src/. -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/configured_files/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/nlohmann_json-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/fmt-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/cxxopts-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/spdlog-src/include
+  INCLUDES = -I/home/mtn/Documents/repository/CppProjectTemplate/src/. -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/configured_files/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/nlohmann_json-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/fmt-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/cxxopts-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/spdlog-src/include -I/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps/catch2-src/single_include
   OBJECT_DIR = app/CMakeFiles/Executable.dir
   OBJECT_FILE_DIR = app/CMakeFiles/Executable.dir
 
@@ -520,6 +583,8 @@ build libspdlogd.a: phony _deps/spdlog-build/libspdlogd.a
 
 build spdlog: phony _deps/spdlog-build/libspdlogd.a
 
+build unit_tests: phony test/unit_tests
+
 # =============================================================================
 # Folder targets.
 
@@ -528,7 +593,7 @@ build spdlog: phony _deps/spdlog-build/libspdlogd.a
 #############################################
 # Folder: /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug
 
-build all: phony _deps/nlohmann_json-build/all _deps/fmt-build/all _deps/spdlog-build/all _deps/cxxopts-build/all _deps/catch2-build/all configured/all src/all app/all
+build all: phony _deps/nlohmann_json-build/all _deps/fmt-build/all _deps/spdlog-build/all _deps/cxxopts-build/all _deps/catch2-build/all configured/all src/all test/all app/all
 
 # =============================================================================
 
@@ -594,6 +659,13 @@ build configured/all: phony
 build src/all: phony src/libLibrary.a
 
 # =============================================================================
+
+#############################################
+# Folder: /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/test
+
+build test/all: phony test/unit_tests
+
+# =============================================================================
 # Unknown Build Time Dependencies.
 # Tell Ninja that they may appear as side effects of build rules
 # otherwise ordered by order-only dependencies.
@@ -605,14 +677,14 @@ build src/all: phony src/libLibrary.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../app/CMakeLists.txt ../cmake/AddGitSubmodule.cmake ../configured/CMakeLists.txt ../configured/config.hpp.in ../src/CMakeLists.txt /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseArguments.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckCXXCompilerFlag.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckCXXSourceCompiles.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckIncludeFile.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckLibraryExists.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/ExternalProject.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FetchContent.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FetchContent/CMakeLists.cmake.in /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindGit.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageMessage.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindThreads.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/GNUInstallDirs.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Internal/CheckCompilerFlag.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake _deps/catch2-src/CMakeLists.txt _deps/cxxopts-src/CMakeLists.txt _deps/cxxopts-src/cmake/cxxopts.cmake _deps/cxxopts-src/include/CMakeLists.txt _deps/fmt-src/CMakeLists.txt _deps/fmt-src/support/cmake/JoinPaths.cmake _deps/fmt-src/support/cmake/cxx14.cmake _deps/nlohmann_json-src/CMakeLists.txt _deps/nlohmann_json-src/cmake/config.cmake.in _deps/nlohmann_json-src/cmake/nlohmann_jsonConfigVersion.cmake.in _deps/nlohmann_json-src/cmake/pkg-config.pc.in _deps/spdlog-src/CMakeLists.txt _deps/spdlog-src/cmake/ide.cmake _deps/spdlog-src/cmake/utils.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../app/CMakeLists.txt ../cmake/AddGitSubmodule.cmake ../configured/CMakeLists.txt ../configured/config.hpp.in ../src/CMakeLists.txt ../test/CMakeLists.txt /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseArguments.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckCXXCompilerFlag.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckCXXSourceCompiles.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckIncludeFile.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckLibraryExists.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/ExternalProject.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FetchContent.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FetchContent/CMakeLists.cmake.in /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindGit.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageMessage.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindThreads.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/GNUInstallDirs.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Internal/CheckCompilerFlag.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake _deps/catch2-src/CMakeLists.txt _deps/cxxopts-src/CMakeLists.txt _deps/cxxopts-src/cmake/cxxopts.cmake _deps/cxxopts-src/include/CMakeLists.txt _deps/fmt-src/CMakeLists.txt _deps/fmt-src/support/cmake/JoinPaths.cmake _deps/fmt-src/support/cmake/cxx14.cmake _deps/nlohmann_json-src/CMakeLists.txt _deps/nlohmann_json-src/cmake/config.cmake.in _deps/nlohmann_json-src/cmake/nlohmann_jsonConfigVersion.cmake.in _deps/nlohmann_json-src/cmake/pkg-config.pc.in _deps/spdlog-src/CMakeLists.txt _deps/spdlog-src/cmake/ide.cmake _deps/spdlog-src/cmake/utils.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../app/CMakeLists.txt ../cmake/AddGitSubmodule.cmake ../configured/CMakeLists.txt ../configured/config.hpp.in ../src/CMakeLists.txt /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseArguments.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckCXXCompilerFlag.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckCXXSourceCompiles.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckIncludeFile.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckLibraryExists.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/ExternalProject.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FetchContent.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FetchContent/CMakeLists.cmake.in /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindGit.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageMessage.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindThreads.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/GNUInstallDirs.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Internal/CheckCompilerFlag.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake _deps/catch2-src/CMakeLists.txt _deps/cxxopts-src/CMakeLists.txt _deps/cxxopts-src/cmake/cxxopts.cmake _deps/cxxopts-src/include/CMakeLists.txt _deps/fmt-src/CMakeLists.txt _deps/fmt-src/support/cmake/JoinPaths.cmake _deps/fmt-src/support/cmake/cxx14.cmake _deps/nlohmann_json-src/CMakeLists.txt _deps/nlohmann_json-src/cmake/config.cmake.in _deps/nlohmann_json-src/cmake/nlohmann_jsonConfigVersion.cmake.in _deps/nlohmann_json-src/cmake/pkg-config.pc.in _deps/spdlog-src/CMakeLists.txt _deps/spdlog-src/cmake/ide.cmake _deps/spdlog-src/cmake/utils.cmake: phony
+build ../CMakeLists.txt ../app/CMakeLists.txt ../cmake/AddGitSubmodule.cmake ../configured/CMakeLists.txt ../configured/config.hpp.in ../src/CMakeLists.txt ../test/CMakeLists.txt /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseArguments.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckCXXCompilerFlag.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckCXXSourceCompiles.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckIncludeFile.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CheckLibraryExists.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/ExternalProject.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FetchContent.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FetchContent/CMakeLists.cmake.in /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindGit.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageMessage.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/FindThreads.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/GNUInstallDirs.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Internal/CheckCompilerFlag.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /home/mtn/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake _deps/catch2-src/CMakeLists.txt _deps/cxxopts-src/CMakeLists.txt _deps/cxxopts-src/cmake/cxxopts.cmake _deps/cxxopts-src/include/CMakeLists.txt _deps/fmt-src/CMakeLists.txt _deps/fmt-src/support/cmake/JoinPaths.cmake _deps/fmt-src/support/cmake/cxx14.cmake _deps/nlohmann_json-src/CMakeLists.txt _deps/nlohmann_json-src/cmake/config.cmake.in _deps/nlohmann_json-src/cmake/nlohmann_jsonConfigVersion.cmake.in _deps/nlohmann_json-src/cmake/pkg-config.pc.in _deps/spdlog-src/CMakeLists.txt _deps/spdlog-src/cmake/ide.cmake _deps/spdlog-src/cmake/utils.cmake: phony
 
 
 #############################################

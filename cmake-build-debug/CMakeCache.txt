@@ -332,9 +332,6 @@ CppProjectTemplate_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 CppProjectTemplate_SOURCE_DIR:STATIC=/home/mtn/Documents/repository/CppProjectTemplate
 
-//The directory containing a CMake configuration file for DOXYGEN.
-DOXYGEN_DIR:PATH=DOXYGEN_DIR-NOTFOUND
-
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/_deps
 
@@ -713,7 +710,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

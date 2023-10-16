@@ -18,4 +18,5 @@ target_link_libraries(${LIBRARY_NAME} PUBLIC
 		nlohmann_json::nlohmann_json
 		fmt::fmt
 		cxxopts::cxxopts
-		spdlog::spdlog)
+		spdlog::spdlog
+		Catch2::Catch2)

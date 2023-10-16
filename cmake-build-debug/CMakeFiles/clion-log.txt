@@ -7,7 +7,6 @@
 -- Required features: cxx_variadic_templates
 -- Build spdlog: 1.11.0
 -- Build type: Debug
-w/o exe. compiling
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug

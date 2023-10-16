@@ -19,6 +19,9 @@
 /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/src/CMakeFiles/edit_cache.dir
 /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
 /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/src/CMakeFiles/Library.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+/home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/test/CMakeFiles/unit_tests.dir
 /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/app/CMakeFiles/rebuild_cache.dir
 /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/app/CMakeFiles/edit_cache.dir
 /home/mtn/Documents/repository/CppProjectTemplate/cmake-build-debug/app/CMakeFiles/Executable.dir

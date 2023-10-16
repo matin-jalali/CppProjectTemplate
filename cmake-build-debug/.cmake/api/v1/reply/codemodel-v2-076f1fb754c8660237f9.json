@@ -15,7 +15,8 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -130,6 +131,21 @@
 					]
 				},
 				{
+					"build" : "test",
+					"jsonFile" : "directory-test-Debug-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
 					"build" : "app",
 					"jsonFile" : "directory-app-Debug-94c5f210ca04b1028ae5.json",
 					"minimumCMakeVersion" : 
@@ -162,13 +178,15 @@
 						0,
 						7,
 						8,
-						9
+						9,
+						10
 					],
 					"name" : "CppProjectTemplate",
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						4
 					]
 				},
 				{
@@ -224,16 +242,16 @@
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 9,
+					"directoryIndex" : 10,
 					"id" : "Executable::@5f5a17c01335469806cb",
-					"jsonFile" : "target-Executable-Debug-fdb30073ba92e1519f07.json",
+					"jsonFile" : "target-Executable-Debug-839eca23ca670e36bfad.json",
 					"name" : "Executable",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 8,
 					"id" : "Library::@145eef247bfb46b6828c",
-					"jsonFile" : "target-Library-Debug-a9a4d614acc0c4b91b53.json",
+					"jsonFile" : "target-Library-Debug-1c362494201bd0e907f9.json",
 					"name" : "Library",
 					"projectIndex" : 0
 				},
@@ -250,6 +268,13 @@
 					"jsonFile" : "target-spdlog-Debug-9728992188945640b1f3.json",
 					"name" : "spdlog",
 					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "unit_tests::@36f028580bb02cc8272a",
+					"jsonFile" : "target-unit_tests-Debug-b907a4576842f47f96e3.json",
+					"name" : "unit_tests",
+					"projectIndex" : 0
 				}
 			]
 		}
